@@ -1,26 +1,54 @@
 # Stapler
 
-A sophisticated document conversion and PDF processing application built with Next.js.
+A document conversion and PDF processing application with a focus on preserving formatting and professional output, built with Next.js.
 
-## Features
+## Core Features
 
-- Rich text editing with formatting capabilities (bold, italic, underline, lists)
-- AI-powered text structuring and enhancement
-- Support for multiple document templates (Standard, Reports, Whitepapers)
-- Advanced PDF export and manipulation
-- File upload with drag-and-drop support
-- PDF combination
-- Document to PDF conversion
+- **Document to PDF Conversion:** 
+  - Convert DOCX files to PDF with preserved formatting
+  - Convert images (JPG/PNG) to PDF with optimized layout
+  - Convert text files to PDF with intelligent formatting
+  - Batch conversion capabilities
+
+- **PDF Management:**
+  - Combine multiple PDFs into a single document
+  - Add images to existing PDFs
+  - Convert photos to professional-looking documents
+  
+- **Professional Output:**
+  - Automatically formatted documents with proper typography
+  - Intelligent preservation of document structure
+  - Customizable output with templates
+  - Optimized for both screen viewing and printing
+
+## Conversion Features
+
+### DOCX Conversion
+- Preserves headings, styles, and document structure
+- Maintains lists and formatting elements
+- Proper spacing and page layout
+- Intelligent style mapping
+
+### Image Conversion
+- Auto-detects image orientation (portrait/landscape)
+- Properly sizes images to fit the page
+- Adds document title and metadata
+- Applies subtle professional styling
+- Optimizes image quality for PDF output
+
+### Text File Conversion
+- Intelligent paragraph detection and formatting
+- Adds document title based on filename
+- Includes page numbers on multi-page documents
+- Proper line spacing and margins
+- Automatic heading detection
 
 ## Tech Stack
 
-- **Frontend Framework**: Next.js v14.1.0
-- **UI Library**: React v18.2.0
-- **Language**: TypeScript
-- **Styling**: TailwindCSS (with @tailwindcss/typography plugin)
-- **Rich Text Editing**: Slate.js
-- **PDF Processing**: html2pdf.js, pdf-lib, mammoth.js
-- **API Integration**: Axios
+- **Frontend:** Next.js, React, TypeScript
+- **Styling:** TailwindCSS
+- **PDF Processing:** html2pdf.js, pdf-lib, mammoth.js
+- **Server API:** Next.js API routes
 
 ## Getting Started
 
@@ -61,23 +89,33 @@ A sophisticated document conversion and PDF processing application built with Ne
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Usage
+## Usage Examples
 
-1. **Document Conversion**: Convert various document formats (DOCX, TXT, images) to PDF
-2. **Text Input**: Use the rich text editor to write or paste your content
-3. **Formatting**: Apply formatting options like bold, italic, bullet points, etc.
-4. **Document Style**: Customize font family, size, color, and alignment
-5. **Template Selection**: Choose between Standard, Report, or Whitepaper templates
-6. **File Upload**: Upload PDFs to combine with your document
-7. **Preview**: See a real-time preview of your document
-8. **Export**: Export your document as a PDF, optionally combining with uploaded PDFs
+### Converting a DOCX file to PDF
+1. Select "Convert to PDF" tool
+2. Upload your DOCX file
+3. The application automatically preserves formatting
+4. Download your professionally formatted PDF
 
-## API Integration
+### Converting an image to PDF
+1. Select "Photo to PDF" tool
+2. Upload your image file
+3. The application automatically detects orientation and optimizes layout
+4. Download your image as a properly formatted PDF
 
-This app integrates with the Deepseek AI API for text enhancement and structuring. To use this feature:
+### Combining PDFs
+1. Select "Combine PDFs" tool
+2. Upload multiple PDF files
+3. Arrange the order if needed
+4. Download the combined PDF
 
-1. Get an API key from [Deepseek](https://deepseek.ai)
-2. Add the API key to your `.env.local` file
+## Future Enhancements
+
+- OCR support for scanned documents
+- Enhanced batch processing
+- Digital signature support
+- Advanced watermarking options
+- Cloud storage integration
 
 ## License
 
@@ -88,8 +126,6 @@ MIT
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [Slate.js](https://www.slatejs.org/)
 - [html2pdf.js](https://github.com/eKoopmans/html2pdf.js)
 - [pdf-lib](https://pdf-lib.js.org/)
 - [Mammoth.js](https://github.com/mwilliamson/mammoth.js)
-- [Deepseek AI](https://deepseek.ai)
