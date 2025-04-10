@@ -33,8 +33,8 @@ A sophisticated document conversion and PDF processing application built with Ne
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stapler.git
-   cd stapler
+   git clone https://github.com/JWAPPS1337/textappv2.git
+   cd textappv2
    ```
 
 2. Install dependencies:
@@ -92,4 +92,4 @@ MIT
 - [html2pdf.js](https://github.com/eKoopmans/html2pdf.js)
 - [pdf-lib](https://pdf-lib.js.org/)
 - [Mammoth.js](https://github.com/mwilliamson/mammoth.js)
-- [Deepseek AI](https://deepseek.ai) 
+- [Deepseek AI](https://deepseek.ai)
